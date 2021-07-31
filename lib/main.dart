@@ -111,10 +111,7 @@ class _WeatherHomeState extends State<WeatherHome> {
 
 class WeatherProvider {
   static Future<Map> getJson(String cityName) async {
-    final apiKey = "0f5c4d3aa7ee2ddc8257daef85cba96b";
-    // final apiEndPoint =
-    //     "http://api.themoviedb.org/3/discover/movie?api_key=7eddeb51d689d3a9372fbd8cbad7d74e&sort_by=popularity.desc";
-
+    final apiKey = "YOUR_API_KEY";
     var url = Uri.http("api.openweathermap.org", "/data/2.5/weather", {
       'q': cityName,
       'appid': apiKey,
